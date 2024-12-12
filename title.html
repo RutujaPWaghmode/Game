@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Matching Game</title>
+    <link rel="stylesheet" href="titlecss.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="game-title">Color Matching Game</h1>
+        <button id="start-btn" class="start-btn">Start Game</button>
+    </div>
+    <script>
+        document.getElementById('start-btn').addEventListener('click', () => {
+            window.location.href = 'instructions.html'; // Redirect to game page
+        });
+    </script>
+</body>
+</html>

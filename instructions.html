@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("C:/Users/Rutuja/Downloads/WhatsApp Image 2024-12-12 at 9.53.57 PM.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .instructions-container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        li {
+            font-size: 1rem;
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .start-btn {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .start-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions-container">
+        <h1>How to Play</h1>
+        <ul>
+            <li>A colored ball will drop from the top of the screen.</li>
+            <li>Click to rotate the basket and match the ball's color with the correct basket section.</li>
+            <li>Each correct match earns you 10 points.</li>
+            <li>Each incorrect match deducts 5 points and reduces your attempts.</li>
+            <li>You have 3 attempts per level. Use them wisely!</li>
+            <li>Reach 500 matches to advance to the next level, or complete within the time limit for a bonus!</li>
+            <li>If you run out of time or attempts, the game is over.</li>
+        </ul>
+        <button class="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "index1.html"; // Navigate to the game page
+        }
+    </script>
+</body>
+</html>

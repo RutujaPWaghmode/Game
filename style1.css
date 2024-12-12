@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("C:/Users/Rutuja/Downloads/WhatsApp Image 2024-12-12 at 9.53.57 PM.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.basket-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    transform: translateX(-50%);
+}
+
+.basket {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.section {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: 100% 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.red { background-color: red; transform: rotate(0deg); }
+.blue { background-color: blue; transform: rotate(90deg); }
+.green { background-color: green; transform: rotate(180deg); }
+.yellow { background-color: yellow; transform: rotate(270deg); }
+
+.ball {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(-50%);
+}
+
+/* Restart Button */
+.restart-container {
+    margin-top: 20px;
+}
+
+.restart-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.restart-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.modal-content button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
+
+/* Restart Button Style */
+.restart-container {
+    margin-top: 20px;
+}
+
+.restart-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.restart-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
